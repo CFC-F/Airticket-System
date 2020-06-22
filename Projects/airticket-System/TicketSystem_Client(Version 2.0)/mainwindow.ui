@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>802</width>
+    <height>663</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TicketingSystem_Client</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>40</y>
+      <width>731</width>
+      <height>451</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>10</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 15pt &quot;Waree&quot;;</string>
+    </property>
+    <property name="text">
+     <string>客户购票信息显示</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>510</y>
+      <width>541</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+font: 75 16pt &quot;Waree&quot;;</string>
+    </property>
+    <property name="text">
+     <string>简易机票售票系统  Version 1.0  本项目仅用于测试使用</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>520</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 57 15pt &quot;Ubuntu&quot;;</string>
+    </property>
+    <property name="text">
+     <string>选择支付方式</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>802</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_func">
+    <property name="title">
+     <string>客户端操作▼</string>
+    </property>
+    <addaction name="action_connect"/>
+    <addaction name="action_disconnect"/>
+    <addaction name="action_buyticket"/>
+    <addaction name="action_exit"/>
+   </widget>
+   <widget class="QMenu" name="menu_inquire">
+    <property name="title">
+     <string>机票查询▼</string>
+    </property>
+    <addaction name="action_inquireone"/>
+    <addaction name="action_inquireall"/>
+   </widget>
+   <widget class="QMenu" name="menu_help">
+    <property name="title">
+     <string>帮助▼</string>
+    </property>
+    <addaction name="action_show"/>
+    <addaction name="action_about"/>
+   </widget>
+   <addaction name="menu_func"/>
+   <addaction name="menu_inquire"/>
+   <addaction name="menu_help"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_connect">
+   <property name="text">
+    <string>连接服务器</string>
+   </property>
+  </action>
+  <action name="action_disconnect">
+   <property name="text">
+    <string>断开连接</string>
+   </property>
+  </action>
+  <action name="action_buyticket">
+   <property name="text">
+    <string>购买机票</string>
+   </property>
+  </action>
+  <action name="action_exit">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="action_inquireone">
+   <property name="text">
+    <string>查询指定机票</string>
+   </property>
+   <property name="toolTip">
+    <string>查询指定机票</string>
+   </property>
+  </action>
+  <action name="action_inquireall">
+   <property name="text">
+    <string>查询所有机票</string>
+   </property>
+   <property name="toolTip">
+    <string>查询所有机票</string>
+   </property>
+  </action>
+  <action name="action_show">
+   <property name="text">
+    <string>显示内容</string>
+   </property>
+  </action>
+  <action name="action_about">
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
